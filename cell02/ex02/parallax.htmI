@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 02 - Parallax</title>
+  <link rel="stylesheet" href="parallax.css" />
+</head>
+<body>
+
+  <!-- ภาพพารัลแลกซ์ภาพที่ 1 -->
+  <section class="parallax bg1">
+    <div class="caption">Welcome aboard</div>
+  </section>
+
+  <!-- บล็อกสีดำคั่นกลาง -->
+  <section class="panel">
+    <h2>Journey Message</h2>
+    <p>
+      This is a black block with any message you like. Scroll to see the second image.
+    </p>
+  </section>
+
+  <!-- ภาพพารัลแลกซ์ภาพที่ 2 -->
+  <section class="parallax bg2">
+    <div class="caption">Enjoy the view</div>
+  </section>
+
+</body>
+</html>
