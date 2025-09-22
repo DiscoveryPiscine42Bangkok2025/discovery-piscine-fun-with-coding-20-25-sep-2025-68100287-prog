@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SNCF Sandwich Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">Timetables</a></li>
+                    <li><a href="#">Stations</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">About ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

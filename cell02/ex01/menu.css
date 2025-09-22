@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu > li {
+    flex: 1;
+}
+
+.menu a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #444;
+}
+
+/* ซ่อนเมนูย่อย */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+}
+
+.submenu li a {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.submenu li a:hover {
+    background-color: #666;
+}
+
+/* แสดงเมื่อ hover */
+.dropdown:hover .submenu {
+    display: block;
+}
