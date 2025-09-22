@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To do or not to do</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 30px;
+    }
+    #ft_list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse; /* ให้รายการใหม่อยู่บน */
+      gap: 5px;
+    }
+    .todo {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button {
+      padding: 8px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>To do or not to do</h1>
+  <button id="newBtn">New</button>
+  <div id="ft_list"></div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
