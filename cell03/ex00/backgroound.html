@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Change Background</title>
+  <link rel="stylesheet" href="background.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Change background</h1>
+    <button id="changeBtn" type="button">Change color</button>
+    <p class="hint">Current color: <span id="code">#ffffff</span></p>
+  </main>
+
+  <script>
+    // สุ่มสีรูปแบบ #RRGGBB
+    function randomHexColor() {
+      const n = Math.floor(Math.random() * 0x1000000); // 0..16777215
+      return "#" + n.toString(16).padStart(6, "0").toUpperCase();
+    }
+
+    const btn = document.getElementById("changeBtn");
+    const code = document.getElementById("code");
+
+    btn.addEventListener("click", function () {
+      const c = randomHexColor();
+      document.body.style.backgroundColor = c;
+      code.textContent = c;
+    });
+  </script>
+</body>
+</html>
