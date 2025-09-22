@@ -1,3 +1,3 @@
-$>./count_fils.sh | cat -e
-210$
-$>
+echo "Regular files: $(find . -type f | wc -l)"
+echo "Directories: $(find . -type d | wc -l)"
+
