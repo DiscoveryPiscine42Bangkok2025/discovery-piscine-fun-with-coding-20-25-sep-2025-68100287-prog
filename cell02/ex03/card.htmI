@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile Card</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <div class="card">
+    <h2 class="card-title">User Profile</h2>
+    <table class="invisible-table">
+      <tr>
+        <td colspan="2" class="profile-pic">
+          <img src="https://media.istockphoto.com/id/1204790126/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B8%AD%E0%B8%A7%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B9%80%E0%B8%87%E0%B8%B2%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%94%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A1%E0%B8%B7%E0%B8%AD-%E0%B8%AD%E0%B8%A7%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%95%E0%B9%89%E0%B8%99-%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C-%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%A2%E0%B8%B6%E0%B8%94%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E.jpg?s=612x612&w=0&k=20&c=4jcPtNmRzrow-P37hX5V2wJqL4ltAQG0t1--owef5l4=" alt="Profile Picture">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="login">@username</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="desc">Web Developer</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="social">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"></a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="button">
+          <a href="#" class="contact-btn">Contact</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
