@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It's over 9000</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <form id="calculator">
+        <input type="text" id="member1">
+        <select id="operator">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+            <option>%</option>
+        </select>
+        <input type="text" id="member2">
+        <input type="submit" value="Try me!" onclick="calculate(); return false;">
+    </form>
+    <script src="calc.js"></script>
+</body>
+</html>
