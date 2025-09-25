@@ -1,0 +1,38 @@
+$(document).ready(function () {
+  function saveTasks() {
+    let tasks = [];
+    $("#ft_list div").each(function () {
+      tasks.push($(this).text());
+    });
+    document.cookie = "tasks=" + JSON.stringify(tasks) + "; path=/";
+  }
+
+  function loadTasks() {
+    let match = document.cookie.match(/tasks=([^;]+)/);
+    if (match) {
+      let tasks = JSON.parse(match[1]);
+      for (let t of tasks.reverse()) {
+        addTask(t);
+      }
+    }
+  }
+
+  function addTask(task) {
+    let newDiv = $("<div>").text(task);
+    newDiv.click(function () {
+      if (confirm("Do you want to remove this task?")) {
+        $(this).remove();
+        saveTasks();
+      }
+    });
+    $("#ft_list").prepend(newDiv);
+    saveTasks();
+  }
+
+  $("#newTaskBtn").click(function () {
+    let task = prompt("Enter new task:");
+    if (task) addTask(task);
+  });
+
+  loadTasks();
+});

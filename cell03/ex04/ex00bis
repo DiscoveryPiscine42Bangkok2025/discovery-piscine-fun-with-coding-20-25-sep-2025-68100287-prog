@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>ex00bis - Change background<
+
+<script src="https://code.jquery.co
+
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<button id="changeBtn">Click me!</b
+
+</body>
+
+</html>
